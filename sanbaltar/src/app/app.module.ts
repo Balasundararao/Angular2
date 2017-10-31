@@ -5,11 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from './core-module/core-module.module';
 import { AdminModule } from './admin-module/admin-module.module';
 import { InstructorsModule } from './instructors-module/instructors-module.module';
 import { SharedModule } from './shared-module/shared-module.module';
 import { StudentsModule } from './students-module/students-module.module';
-import { CoreModule } from './core-module/core-module.module';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { CoreModule } from './core-module/core-module.module';
   imports: [
     BrowserModule,
     HttpModule,
-    CoreModule,
     FlexLayoutModule,
+    CoreModule,
     AdminModule,
     InstructorsModule,
     SharedModule,
