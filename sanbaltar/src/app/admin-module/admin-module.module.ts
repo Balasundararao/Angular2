@@ -11,4 +11,4 @@ import { AdminModuleComponent } from './admin-module.component';
   ],
   declarations: [AdminModuleComponent]
 })
-export class AdminModule{ }
+export class AdminModule { }

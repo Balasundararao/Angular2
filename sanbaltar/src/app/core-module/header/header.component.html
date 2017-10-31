@@ -1,51 +1,8 @@
 <mat-toolbar color="primary">
-
-  <span>Sanbaltar</span>
-
-
+  <a href="/" title="Home"><span>Sanbaltar</span></a>
   <ul role="navigation">
-        <!----><li><a class="nav-link" href="features" title="Features">Features</a></li><li><a class="nav-link" href="docs" title="Docs">Docs</a></li><li><a class="nav-link" href="resources" title="Resources">Resources</a></li><li><a class="nav-link" href="events" title="Events">Events</a></li><li><a class="nav-link" href="https://blog.angular.io/" title="Blog">Blog</a></li>
-      </ul>
-
-
-  <!--  Student Module  -->
-  <div mat-icon-button [matMenuTriggerFor]="menu" class="menuspacer">
-    <mat-icon>school</mat-icon><span>Students</span>
-  </div>
-  <mat-menu [overlapTrigger]="false" #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voicemail</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
-    </button>
-  </mat-menu>
-
-  <!--  Professors  Module  -->
-  <div  mat-icon-button [matMenuTriggerFor]="rootMenu" class="menuspacer">
-    <mat-icon>group</mat-icon>
-    <span>Instructors</span>
-  </div>
-  <mat-menu [overlapTrigger]="false" #rootMenu="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="subMenu">Data Entry</button>
-    <button mat-menu-item>Reports</button>
-  </mat-menu>
-  <mat-menu #subMenu="matMenu">
-    <button mat-menu-item>Shut down</button>
-    <button mat-menu-item>Restart</button>
-    <button mat-menu-item>Hibernate</button>
-  </mat-menu>
-
-  <!-- Admin Module....-->
-  <div class="menuspacer">
-    <mat-icon>face</mat-icon>
-    <span>Admin Module</span>
-  </div>
-
+    <li><a class="nav-link" href="/#/students" title="Students">Students</a></li>
+    <li><a class="nav-link" href="/#/instructors" title="Instructors">Instructors</a></li>
+    <li><a class="nav-link" href="/#/administrators" title="Administrator">Administrator</a></li>
+  </ul>
 </mat-toolbar>
