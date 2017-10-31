@@ -1,0 +1,42 @@
+{
+    "dynamic" :{
+        "group": [
+            {
+                "name" : "localDB",
+                "urls": {
+                },
+                "cache": {
+                    "optimizeFor": "performance",
+                    "maxAgeMs": 3600000,
+                    "maxEntries": 20,
+                    "strategy": "lru"
+                }
+            }
+        ]
+    },
+    "external": {
+        "urls": [
+            {
+                "url": "https://fonts.googleapis.com/icon?family=Material+Icons"
+            },
+            {
+                "url": "https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono"
+            },
+            {
+                "url": "https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"
+            },
+            {
+                "url": "https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.5/web-animations.min.js"
+            }
+        ]
+    },
+    "push": {
+        "showNotifications": true,
+        "backgroundOnly": false
+    },
+    "routing": {
+        "index":"/index.html",
+        "routes": {
+        }
+      }
+}
