@@ -1,0 +1,29 @@
+
+// ==========================================================================
+// Screen Sizes
+// - all sizes are set to be a "min-width" in a mediaquery,
+// - all breakpoints represent width up to the next breakpoint.
+// ==========================================================================
+$screen-base: 320px !global;  // not part of mediaqueries, used to set the minimum screen width
+$screen-short: 320px !global;
+$screen-xsmall: 480px !default !global;
+$screen-small: 600px !default !global;
+$screen-tall: 600px !default !global;
+$screen-medium: 768px !default !global;
+$screen-large: 960px !default !global;
+$screen-xlarge: 1024px !default !global;
+$screen-grande: 1024px !default !global;
+$screen-venti: 1280px !default !global;
+$framework-screen-mq: base !default !global;    // Used to identify which breakpoint is being worked on.
+
+$site-theme-color: #BF4D28;// #BF4D28;
+$font-size: 16px;
+$font-size-headlogo: 30px;
+$font-stack:    Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;;
+$primary-color: #333;
+$font-white: #FFFFFF;
+
+// Admin Module:
+$admin-side-nav-font-size: 12px;
+$admin-side-nav-header-bgcolor: #ccc;
+$admin-side-nav-width: 250px;

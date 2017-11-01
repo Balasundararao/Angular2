@@ -1,8 +1,10 @@
 <mat-toolbar color="primary">
-  <a routerLink="/" title="Home"><span>Sanbaltar</span></a>
-  <ul role="navigation">
-    <li><a class="nav-link" routerLink="/students" title="Students">Students</a></li>
-    <li><a class="nav-link" routerLink="/instructors" title="Instructors">Instructors</a></li>
-    <li><a class="nav-link" routerLink="/admin" title="Administrator">Administrator</a></li>
-  </ul>
+  <a routerLink="/" title="Home"><span class="site-text">SANBALTAR</span></a>
+  <nav fxLayout="row" >
+    <ul role="navigation" fxShow fxHide.lt-sm="true">
+      <li><a class="nav-link" routerLink="/students" title="Students">STUDENTS</a></li>
+      <li><a class="nav-link" routerLink="/instructors" title="Instructors">INSTRUCTORS</a></li>
+      <li><a class="nav-link" routerLink="/admin" title="Administrator">ADMINSTRATORS</a></li>
+    </ul>
+  </nav>
 </mat-toolbar>

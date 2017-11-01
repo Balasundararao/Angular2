@@ -5,11 +5,14 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatMenuModule, MatIconModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   imports: [
     CommonModule,
     BrowserAnimationsModule,
     RouterModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule
