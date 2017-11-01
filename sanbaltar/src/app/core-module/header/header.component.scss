@@ -1,0 +1,25 @@
+@import '~sass/variables';
+a{
+  text-decoration: none;
+  color: $font-white;
+  span.site-text {
+    font: 100% $font-stack;
+    font-size: $font-size-headlogo;
+  }
+}
+nav {
+  ul.navigatoion {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li { display: inline-block; }
+  a {
+    font: 100% $font-stack;
+    font-size: $font-size;
+    color: $font-white;
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
