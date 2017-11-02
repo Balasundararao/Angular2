@@ -1,0 +1,29 @@
+< style type = "text/css" >
+div {
+border:1 px solid red;
+}
+</style >
+
+<mat - sidenav - container >
+<!--START:SideNav-- >
+<mat - sidenav mode = "side"
+#sidenav>
+< nav >
+<h3 > Registration Module < /h3 >
+<ul >
+<li >< a routerLink = "/admin/students" > Student Registration < /a >< /li >
+<li >< a routerLink = "/admin/courses" > Courses < /a >< /li >
+<li >< a routerLink = "/admin/instructors" > Instructors < /a >< /li >
+</ul >
+</nav >
+</mat - sidenav > <!--END:SideNav-- >
+<!--START:RightNav-- >
+<div >
+<button type = "button" mat - button(click) = "sidenav.open()" >
+<mat - icon > view compact < /mat - icon >
+</button >
+<div class = "box1" >
+<router - outlet >< /router - outlet >
+</div >
+</div >< !--END:RightNav-- >
+</mat - sidenav - container >

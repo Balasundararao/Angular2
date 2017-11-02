@@ -1,20 +1,25 @@
-<mat-sidenav-container class="admin-sidenav-container">
-  <!--  SIDE NAV STARTS -->
-  <mat-sidenav mode="side" opened="true" #sidenav class="admin-sidenav">
-    <nav>
-      <h3>Registration Module</h3>
-      <ul>
-        <li><a routerLink="/admin/students">Student Registration</a></li>
-        <li><a routerLink="/admin/courses">Courses</a></li>
-        <li><a routerLink="/admin/instructors">Instructors</a></li>
-      </ul>
-    </nav>
-  </mat-sidenav> <!-- SIDE NAV ENDS -->
-
-  <div class="admin-sidenav-content">
-    <button type="button" mat-button (click)="sidenav.close()">
-      <mat-icon>view compact</mat-icon>
-    </button>
-    <router-outlet></router-outlet>
-  </div>
+<mat-sidenav-container>
+    <!--START: SideNav -->
+    <mat-sidenav mode="side" #sidenav>
+        <nav>
+            <h3>Registration Module</h3>
+            <ul>
+                <li><a routerLink="/admin/students">Student Registration</a></li>
+                <li><a routerLink="/admin/courses">Courses</a></li>
+                <li><a routerLink="/admin/instructors">Instructors </a></li>
+            </ul>
+            
+        </nav>
+    </mat-sidenav>
+    <!--END: SideNav -->
+    <!--START: RightNav -->
+    <div>
+        <button type="button" mat-button (click)="sidenav.open()">
+          <mat-icon>open with</mat-icon>open
+        </button>
+        <div class="box1">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <!--END: RightNav -->
 </mat-sidenav-container>

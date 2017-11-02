@@ -1,8 +1,17 @@
 <app-header></app-header>
-<router-outlet></router-outlet>
+<div fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex="100%">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
-<h1 class="mat-display-1">Jackdaws love my big sphinx of quartz.</h1>
-<h2 class="mat-h2">The quick brown fox jumps over the lazy dog.</h2>
 
-<h1>Jackdaws love my big sphinx of quartz.</h1>
-<h2>The quick brown fox jumps over the lazy dog.</h2>
+<!--
+fxLayout="row" === display: flex; flex-direction: row
+fxLayoutAlign="center center" === justify-content: center; align-items: center
+fxFlex="50%" === flex-basis: 50%
+<div fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex="50%">Flex item 1</div>
+  <div fxFlex="50%">Flex item 1</div>
+</div>
+-->
