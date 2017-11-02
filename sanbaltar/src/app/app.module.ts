@@ -11,14 +11,19 @@ import { InstructorsModule } from './instructors-module/instructors-module.modul
 import { SharedModule } from './shared-module/shared-module.module';
 import { StudentsModule } from './students-module/students-module.module';
 
+//testUI modules..
+import { Material2Module } from './material2-module/material2-module.module';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+
     BrowserModule,
     HttpModule,
     FlexLayoutModule,
+    Material2Module,
     CoreModule,
     AdminModule,
     InstructorsModule,

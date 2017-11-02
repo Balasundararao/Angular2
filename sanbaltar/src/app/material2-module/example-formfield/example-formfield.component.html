@@ -1,0 +1,83 @@
+<div fxLayout="column" fxLayoutAlign="center start">
+<div fxFlex="100%">
+
+<!-- Example1  -->
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Input">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Select">
+      <mat-option value="option">Option1</mat-option>
+      <mat-option value="option">Option2</mat-option>
+      <mat-option value="option">Option3</mat-option>
+      <mat-option value="option">Option4</mat-option>
+      <mat-option value="option">Option5</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+
+<!-- Example2  -->
+
+<div class="example-container">
+  <form class="example-container" [formGroup]="options">
+    <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
+    <div>
+      <label>Float placeholder: </label>
+      <mat-radio-group formControlName="floatPlaceholder">
+        <mat-radio-button value="auto">Auto</mat-radio-button>
+        <mat-radio-button value="always">Always</mat-radio-button>
+        <mat-radio-button value="never">Never</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </form>
+
+  <mat-form-field
+      [hideRequiredMarker]="true"
+      [floatPlaceholder]="'never'" [dividerColor]="'primary'" [color]="'warn'">
+    <input matInput placeholder="Simple placeholder" required>
+  </mat-form-field>
+
+  <mat-form-field
+      [hideRequiredMarker]="options.value.hideRequired"
+      [floatPlaceholder]="options.value.floatPlaceholder">
+    <mat-select required>
+      <mat-option>-- None --</mat-option>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+    <mat-placeholder><mat-icon>favorite</mat-icon> <b> Fancy</b> <i> placeholder</i></mat-placeholder>
+  </mat-form-field>
+</div>
+
+<!--  Example 3 -->
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Enter your email" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+</div>
+
+
+<!--Example 4  -->
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Amount" type="number" class="example-right-align">
+    <span matPrefix>$&nbsp;</span>
+    <span matSuffix>.00</span>
+  </mat-form-field>
+</div>
+
+
+</div> <!-- fxFlex ends-->
+</div>
