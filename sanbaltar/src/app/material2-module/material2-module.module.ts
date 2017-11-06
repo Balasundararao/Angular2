@@ -41,6 +41,9 @@ import { ExampleAutocompleteComponent } from './example-autocomplete/example-aut
 import { ExampleCheckboxComponent } from './example-checkbox/example-checkbox.component';
 import { ExampleDatepickerComponent } from './example-datepicker/example-datepicker.component';
 import { ExampleFormfieldComponent } from './example-formfield/example-formfield.component';
+import { ExampleInputComponent } from './example-input/example-input.component';
+import { ExampleRadioComponent } from './example-radio/example-radio.component';
+import { ExampleSelectComponent } from './example-select/example-select.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -79,6 +82,6 @@ import { ExampleFormfieldComponent } from './example-formfield/example-formfield
     MatToolbarModule,
     MatTooltipModule,
   ],
-  declarations: [Material2ModuleComponent, ExampleCardComponent, ExampleAutocompleteComponent, ExampleCheckboxComponent, ExampleDatepickerComponent, ExampleFormfieldComponent]
+  declarations: [Material2ModuleComponent, ExampleCardComponent, ExampleAutocompleteComponent, ExampleCheckboxComponent, ExampleDatepickerComponent, ExampleFormfieldComponent, ExampleInputComponent, ExampleRadioComponent, ExampleSelectComponent]
 })
 export class Material2Module { }

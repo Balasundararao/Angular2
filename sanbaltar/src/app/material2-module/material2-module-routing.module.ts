@@ -6,6 +6,9 @@ import { ExampleAutocompleteComponent} from './example-autocomplete/example-auto
 import { ExampleCheckboxComponent } from './example-checkbox/example-checkbox.component';
 import { ExampleDatepickerComponent } from './example-datepicker/example-datepicker.component';
 import { ExampleFormfieldComponent } from './example-formfield/example-formfield.component';
+import { ExampleInputComponent } from './example-input/example-input.component';
+import { ExampleRadioComponent } from './example-radio/example-radio.component';
+import { ExampleSelectComponent } from './example-select/example-select.component';
 
 const mtRoutes: Routes = [
   { path: 'mat', component: Material2ModuleComponent,
@@ -14,7 +17,11 @@ const mtRoutes: Routes = [
       { path: 'autocomplete',   component: ExampleAutocompleteComponent },
       { path: 'checkbox',   component: ExampleCheckboxComponent },
       { path: 'datepicker',   component: ExampleDatepickerComponent },
-      { path: 'formfield',   component: ExampleFormfieldComponent }
+      { path: 'formfield',   component: ExampleFormfieldComponent },
+      { path: 'input',   component: ExampleInputComponent },
+      { path: 'radio',   component: ExampleRadioComponent },
+      { path: 'select',   component: ExampleSelectComponent }
+
     ]
   }
 ];
