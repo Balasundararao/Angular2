@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var q = require('q');
 var _ = require('lodash');
 var logger   = require('../utils/logger')('ser_courses_services');
-var crsModel = require('./ser_courses_model');
+var crsModel = require('./courses_model');
 
 var crsObj = {};
 logger.info('##### In courses_services.js File #####');

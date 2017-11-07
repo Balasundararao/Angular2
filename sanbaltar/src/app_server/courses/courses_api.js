@@ -1,6 +1,6 @@
 'use strict';
 var express = require('express');
-var ser_courses = require('./ser_courses_services');
+var ser_courses = require('./courses_services');
 var coursesRoutes = express.Router();
 coursesRoutes.get("/api/courses",       ser_courses.getAllCourses);
 //coursesRoutes.get("/api/courses/:crsId",   ser_courses.getOneDoc); // Testing is pending

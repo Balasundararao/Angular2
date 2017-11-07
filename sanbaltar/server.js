@@ -131,7 +131,7 @@ var SampleApp = function() {
         self.app.use(bodyParser.urlencoded({ extended: true }));
         self.app.use(bodyParser.text());
         self.app.use(bodyParser.json({ type: 'application/json'}));
-        self.app.use(require('./src/app_server/ser_courses/ser_courses_api'));
+        self.app.use(require('./src/app_server/courses/courses_api'));
 
         //self.app.use(require('./src/app_server/utils/common_utils'));
         //self.app.use(require('./src/app_server/mds_services/mds_servies_api'));

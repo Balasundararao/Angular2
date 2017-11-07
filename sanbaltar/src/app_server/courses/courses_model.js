@@ -4,7 +4,7 @@ mongoose.Promise = global.Promise;
 var Schema = mongoose.Schema;
 
   var schcourse = new Schema({
-    crsName        : {type: String},
+    crsName : {type: String,  required: true},
     crsDescription : {type: String},
     crsLevel       : {type: String, default: 'L1'},
     crsClass       : {type: String, default: 'BRL'},
