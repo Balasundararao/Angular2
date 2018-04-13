@@ -103,6 +103,10 @@ var SampleApp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cacheGet('index.html') );
         };
+        self.routes["/*"] = function(req, res) {
+            res.setHeader("Content-Type", "text/html");
+            res.send(self.cacheGet("index.html"));
+          };
         app.routes = self.routes;
     };
 
